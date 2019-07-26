@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="makecents-exceptions",
-    version="0.0.3",
+    version="0.0.4",
     author="MakeCents",
     author_email="yma@mymakecents.com",
     description="exceptions package",

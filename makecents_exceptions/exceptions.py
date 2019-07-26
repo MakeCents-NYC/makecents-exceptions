@@ -303,6 +303,12 @@ class InvalidFileType(MakecentsValueError):
     message = 'The file you are trying to upload is of invalid type. Please upload a different file'
 
 
+class InvalidACHTransaction(MakecentsValueError):
+    code = 42
+    title = 'Invalid ACH Transaction'
+    message = 'The ACH transaction is invalid. Please try again'
+
+
 class InternalServiceError(MakecentsValueError):
     code = 20
     title = 'Generic Internal Service Error'

@@ -297,10 +297,16 @@ class FileDoesNotExist(MakecentsValueError):
     message = 'The file you are trying to access does not exist in this location. Please check it again'
 
 
-class InvalidFileType(MakecentsValueError):
+class InvalidFileType(MakecentimsValueError):
     code = 41
     title = 'Invalid File Type'
     message = 'The file you are trying to upload is of invalid type. Please upload a different file'
+
+
+class InvalidACHTransaction(MakecentsValueError):
+    code = 42
+    title = 'Invalid ACH Transaction'
+    message = 'The ACH transaction is invalid. Please try again'
 
 
 class InternalServiceError(MakecentsValueError):
